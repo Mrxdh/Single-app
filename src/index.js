@@ -21,7 +21,6 @@ const store = createStore(
     applyMiddleware(middleware)
 )
 
-console.log(history, Shop)
 const Root = (
     <Provider store={store} >
         <Router history={ history }>
