@@ -14,7 +14,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div style={ { backgroundColor: '#FFF' } }>
-        <button onClick={ () => { this.props.history.push('/index') } }>341324124143</button>
+        <button onClick={ () => { this.props.history.push('/shop') } }>341324124143</button>
         </div>
         </div>
     );

@@ -26,7 +26,7 @@ const Root = (
         <Router history={ history }>
             <div>
                 <Route path='/' exact component={ App } />
-                <Route path='/index' exact component={ Shop } />
+                <Route path='/shop' exact component={ Shop } />
             </div>
         </Router>
     </Provider>
