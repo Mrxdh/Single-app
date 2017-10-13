@@ -1,0 +1,25 @@
+
+[{
+  "name"             : "kuban-m-demo",
+  "cwd"              : "./",
+  "script"           : "bin/node-server.js",
+  "log_date_format"  : "YYYY-MM-DD HH:mm Z",
+  "error_file"       : "./log/error.stderr.log",
+  "out_file"         : "./log/kuban.stdout.log",
+  "instances"        : 0, //or 0 => 'max'
+  "min_uptime"       : "200s", // 200 seconds, defaults to 1000
+  "max_restarts"     : 100, // defaults to 15
+  "max_memory_restart": "500M", // 1 megabytes, e.g.: "2G", "10M", "100K", 1024 the default unit is byte.
+  "watch"            : false,
+  "ignore_watch"      : ["[\\/\\\\]\\./", "node_modules"],
+  "merge_logs"       : true,
+  "exec_interpreter" : "node",
+  "exec_mode"        : "cluster",
+  "autorestart"      : true, // enable/disable automatic restart when an app crashes or exits
+  "vizion"           : false, // enable/disable vizion features (versioning control)
+  "env": {
+    "NODE_ENV": "production",
+    "PORT":8510,
+    "HOST":"127.0.0.1"
+  }
+}]
