@@ -21,7 +21,7 @@ app.use(convert(staticCache('build'), {
   maxAge: 30 * 24 * 60 * 60
 }))
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8510
 const host = process.env.HOST || '127.0.0.1'
 
 app.listen(port)
